@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- STUDENT NUMBER: 8750774 -->
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Order Form</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+	
+	
+</head>
+
+<body>
+	<header>
+		<img src="images/order.jpg" alt="Order">
+		<h2>Dinosaur Lecture</h2>
+		<h3>Don't Miss The Fun!</h3>
+		
+	</header>
+
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="#" class="current">Home</a></li>
+        	<li><a href="#">Day 1</a>
+				<ul>
+                    <li><a href="#">Video 1</li></a>
+                    <li><a href="#">Video 2</li></a>
+                    <li><a href="#">Sound 1</li></a>
+					<li><a href="#">Sound 2</li></a>
+                </ul>
+        	</li>
+			<li><a href="#">Day 2</a></li>
+        	<li><a href="#">Day 3</a></li>
+        	<li><a href="#">Day 4</a></li>
+    	</ul>
+	</nav>
+
+	<main>
+		<section>
+			<h1>Order Form</h1>
+				<form action="order.html" method="get" name="order_form" id="registration_form">
+					<fieldset>
+						<legend>Tickets</legend>
+						<label for="firstName">First Name: </label>
+						<input type="text" name="firstName" id="firstName" required>
+
+						<label for="lastName">Last Name: </label>
+						<input type="tel" name="lastName" id="lastName" required>
+								
+						<label for="email">Email: </label>
+						<input type="text" name="email" placeholder="someone@example.com" id="fromEmail" required>
+					</fieldset>
+					<fieldset>
+						<legend>Payment Type</legend>
+						<input type="radio" name="paymentType" id="mastercard">
+						<label for="mastercard">MasterCard</label>
+
+						<input type="radio" name="paymentType" id="visa">
+						<label for="visa">Visa</label>
+					</fieldset>
+					<fieldset>
+						<legend>Order Recordings</legend>
+						<label for="order">Order: </label>
+						<select name="order" id="order">
+							<option value="video">Video</option>
+							<option value="sound">Sound</option>
+							<option value="both">Both</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<legend>Send Us Your Order</legend>
+						<input type="submit" name="submit" placeholder="Submit">
+						<input type="reset" name="reset" placeholder="Reset Fields">
+					</fieldset>
+				</form>
+					
+			<h1>Samples</h1>
+				<audio controls>
+					<source src="media/sjv_welcome.mp3" type="audio/mp3">
+				</audio>
+			<br>
+			<video controls>
+                <source src="media/sjv_speakers_sampson.mp4" type="video/mp4">
+            </video>
+		</section>
+
+		<aside>
+			<figure>
+				<img src="Images/poster.png" alt="poster">
+				<figcaption>Find Out More</figcaption>
+			</figure>
+			<br>
+			<table>
+				<tr>
+					<th>Lecture</th>
+					<th>Time</th>
+				  </tr>
+				  <tr>
+					<td>Dino Intro</td>
+					<td>9:00 am</td>
+				  </tr>
+				  <tr>
+					<td>Dino Advanced</td>
+					<td>11:00 am</td>
+				  </tr>
+			</table>
+		</aside>
+	</main>
+	<footer>
+		&copy; Copyright Student ID : 8750774
+	</footer>
+</body>
+</html>
